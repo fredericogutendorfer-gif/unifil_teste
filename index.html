@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorar Tabela Periódica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aprenda a Tabela Periódica</h1>
+       
+        <img id="tabela-imagem" src="https://www.coladaweb.com/wp-content/uploads/2014/12/20220418-tabela-periodica-1.png" alt="Tabela Periódica">
+
+        <div id="elemento-atual" class="elemento-atual">H</div>
+
+        <input type="text" id="nome-elemento" placeholder="Digite o nome do elemento">
+
+        <button id="verificar-btn">Verificar</button>
+
+        <p id="mensagem"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#tabela-imagem {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+#elemento-atual {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#mensagem {
+    margin-top: 10px;
+    font-size: 18px;
+    height: 50px;
+}
+
+
